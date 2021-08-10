@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background: #7f7fd5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #91eae4,
+    #86a8e7,
+    #7f7fd5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #91eae4,
+    #86a8e7,
+    #7f7fd5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+h1,
+h2,
+p,
+li {
+  font-family: "Red Hat Display";
+  padding: 5px;
+}
+h1 {
+  font-size: 4.5vh;
+}
+p {
+  font-size: 3vh;
+}
+.container {
+  background-color: azure;
+  padding: 15px;
+  height: 85vh;
+  width: 45%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 7px 8px 23px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 7px 8px 23px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 7px 8px 23px 0px rgba(0, 0, 0, 0.75);
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+}
+.main {
+  height: 88%;
+  background-color: #57a7d6;
+  opacity: 90%;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.Todobody {
+  height: 80%;
+  background: rgba(255, 255, 255, 0.8);
+  width: 95%;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px grey solid;
+}
+.Date,
+.In {
+  padding: 8px;
+  height: 9%;
+  color: #ddfff7;
+}
+.textfield {
+  height: 3rem;
+  width: 40%;
+  font-family: "Red Hat Display";
+  font-size: 3vh;
+  border-radius: 10px;
+}
+form {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-add {
+  background-color: #7bc7f3;
+  padding: 13px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.btn-add:hover {
+  box-shadow: 10px 11px 32px 0px rgba(0, 0, 0, 0.62);
+  -webkit-box-shadow: 10px 11px 32px 0px rgba(0, 0, 0, 0.62);
+  -moz-box-shadow: 10px 11px 32px 0px rgba(0, 0, 0, 0.62);
+  background-color: rgb(255, 255, 255);
+  background-color: #7bc7f3;
+}
+input,
+label,
+.btn-add {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px;
+  list-style: none;
+  font-size: 2.5vh;
+  border-radius: 10px;
+  width: 90%;
+  background-color: aliceblue;
+  padding: 10px;
+  border: solid 1px black;
+  transition: 0.5s ease-in-out;
+}
+.item:hover {
+  box-shadow: 10px 11px 32px 0px rgba(0, 0, 0, 0.62);
+  -webkit-box-shadow: 10px 11px 32px 0px rgba(0, 0, 0, 0.62);
+  -moz-box-shadow: 10px 11px 32px 0px rgba(0, 0, 0, 0.62);
+  background-color: rgb(255, 255, 255);
+}
+.btn-check,
+.btn-trash {
+  padding: 10px;
+  margin: 2.5px;
+  transition: 0.5s ease-in-out;
+}
+.btn-check:hover,
+.btn-trash:hover {
+  box-shadow: 1px 2px 32px -2px rgba(0, 0, 0, 0.62);
+  -webkit-box-shadow: 1px 2px 32px -2px rgba(0, 0, 0, 0.62);
+  -moz-box-shadow: 1px 2px 32px -2px rgba(0, 0, 0, 0.62);
+}
+.btn-check {
+  background-color: #7cdfb6;
+  border: 1px solid grey;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn-trash {
+  background-color: #ff619b;
+  border: 1px solid grey;
+  border-radius: 10px;
+  cursor: pointer;
+}
